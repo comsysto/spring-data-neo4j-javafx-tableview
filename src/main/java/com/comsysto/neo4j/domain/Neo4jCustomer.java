@@ -29,7 +29,13 @@ public class Neo4jCustomer implements Neo4jNode {
 
     private String lastname;
 
-    @Neo4jTableBuilderColumnField(columnName = "Signup Date", columnOrder = 3)
+    @Neo4jTableBuilderColumnField(columnName = "Comments", columnOrder = 3)
+    private String comments;
+
+    @Neo4jTableBuilderColumnField(columnName = "Orders", columnOrder = 4)
+    private String orders;
+
+    @Neo4jTableBuilderColumnField(columnName = "Signup Date", columnOrder = 7)
     private Date signupDate;
 
     @Neo4jTableBuilderColumnField(columnName = "#Knows", columnType = Neo4jTableBuilderColumnField.FieldType.readOnly,  columnOrder = 10)
@@ -54,6 +60,8 @@ public class Neo4jCustomer implements Neo4jNode {
         this.customerName = firstname+" "+lastname;
         this.firstname = firstname;
         this.lastname = lastname;
+        this.comments = "[no comments]";
+        this.orders = "[no orders]";
         this.signupDate = signupDate;
         this.amountKnows = 0;
     }
@@ -98,6 +106,22 @@ public class Neo4jCustomer implements Neo4jNode {
     public void setLastname(String lastname) {
         this.lastname = lastname;
         this.customerName = firstname+" "+lastname;
+    }
+
+    public String getOrders() {
+        return orders;
+    }
+
+    public void setOrders(String orders) {
+        this.orders = orders;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
     }
 
     public Date getSignupDate() {
