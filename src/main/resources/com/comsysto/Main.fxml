@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?scenebuilder-stylesheet style.css?>
+
+<VBox fx:id="main_vbox" prefHeight="750.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.comsysto.MainController">
+  <children>
+    <MenuBar fx:id="main_menubar" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File" fx:id="file_menu">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" fx:id="file_quit_menuitem" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help" fx:id="help_menu">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About" fx:id="about_menuitem" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <VBox id="VBox" fx:id="main_data_vbox" alignment="TOP_LEFT" disable="false" snapToPixel="true" spacing="0.0">
+      <children>
+        <ToolBar fx:id="main_data_toolbar" prefWidth="435.0" VBox.vgrow="ALWAYS">
+          <items>
+            <TextField fx:id="main_data_toolbar_search_textfield" onKeyReleased="#searchTextfieldKeyReleased" prefWidth="200.0" promptText="Search Names" />
+          </items>
+        </ToolBar>
+        <AnchorPane id="AnchorPane" fx:id="main_data_table_anchorpane" prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <TableView id="menu_data_tableview" fx:id="menu_data_customers_tableview" editable="true" prefHeight="833.0" prefWidth="817.0" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <stylesheets>
+                <URL value="@style.css" />
+              </stylesheets>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+  </children>
+</VBox>

@@ -1,0 +1,23 @@
+{
+    -fx-color: #292929;
+}
+
+.line {
+    -fx-background-color: #292929;
+    -fx-height: 1px;
+    -fx-fill: #292929;
+}
+
+.table-row-cell-new {
+    -fx-margin: 0 0 0 0;
+    -fx-border-width: 1px;
+    -fx-background-color: lightgreen;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}

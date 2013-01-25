@@ -1,0 +1,17 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.bak
+
+*.iml
+*/.idea
+*/target
+
+.idea
+target
+data
+*.iml
+.DS_Store

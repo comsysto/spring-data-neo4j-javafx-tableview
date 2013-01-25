@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet style.css?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="479.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.comsysto.StandardController">
+  <children>
+    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="50.0" prefHeight="22.0" prefWidth="449.0" text="This is the comSysto Spring Data Neo4j JavaFX TableView Demo." wrapText="true" />
+    <Button defaultButton="true" layoutX="400.0" layoutY="136.0" mnemonicParsing="false" onAction="#close" prefWidth="63.0" style="" text="OK" />
+    <ImageView fitHeight="41.0000114440918" fitWidth="312.7015751737502" layoutX="0.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/simple_header.jpg" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="41.0000114440918" fitWidth="312.7015751737502" layoutX="240.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@img/simple_header.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="14.0" layoutY="3.0" prefWidth="198.0" text="ABOUT" textFill="#292929">
+      <font>
+        <Font size="28.0" />
+      </font>
+    </Label>
+    <Hyperlink layoutX="139.0" layoutY="76.0" onAction="#email" text="Elisabeth.Engel@comsysto.com" />
+    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="108.0" prefHeight="41.0" prefWidth="371.0" text="Enjoy!" wrapText="true" />
+    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="79.0" prefHeight="22.0" prefWidth="129.0" text="For details contact " wrapText="true" />
+    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="139.0" prefHeight="22.0" prefWidth="371.0" text="© comSysto GmbH" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>
