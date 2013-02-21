@@ -369,7 +369,7 @@ public class Neo4jTableBuilder <T extends Neo4jNode> {
         tableView.getItems().removeAll();
 
         data = FXCollections.observableArrayList();
-        this.newNode = createNewNode();
+        if (this.newNode == null) this.newNode = createNewNode();
         data.add(newNode);
 
         for (T item : result) {
