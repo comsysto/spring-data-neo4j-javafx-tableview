@@ -51,19 +51,19 @@ public class DatabaseSetup {
         ArrayList<Neo4jCustomer> someNeo4jCustomers = new ArrayList<Neo4jCustomer>();
 
         // Customers
-        someNeo4jCustomers.add(createCustomer("Adam", "Bien"));
-        someNeo4jCustomers.add(createCustomer("Andres", "Almiray"));
-        someNeo4jCustomers.add(createCustomer("Ben", "Evans"));
-        someNeo4jCustomers.add(createCustomer("Bob", "Lee"));
-        someNeo4jCustomers.add(createCustomer("Chris", "Richardson"));
-        someNeo4jCustomers.add(createCustomer("Jasper", "Potts"));
-        someNeo4jCustomers.add(createCustomer("Jim", "Weaver"));
-        someNeo4jCustomers.add(createCustomer("Josh", "Long"));
-        someNeo4jCustomers.add(createCustomer("Kirk", "Pepperdine"));
-        someNeo4jCustomers.add(createCustomer("Martijn", "Verburg"));
-        someNeo4jCustomers.add(createCustomer("Richard", "Bair"));
-        someNeo4jCustomers.add(createCustomer("Stephen", "Chin"));
-        someNeo4jCustomers.add(createCustomer("Daniel", "Winges"));
+        someNeo4jCustomers.add(createCustomer("Jacob", "Smith"));
+        someNeo4jCustomers.add(createCustomer("Mia", "Miller"));
+        someNeo4jCustomers.add(createCustomer("Emily", "Clark"));
+        someNeo4jCustomers.add(createCustomer("Daniel", "Lui"));
+        someNeo4jCustomers.add(createCustomer("Michael", "Taylor"));
+        someNeo4jCustomers.add(createCustomer("Jasper", "Davis"));
+        someNeo4jCustomers.add(createCustomer("Mason", "Martin"));
+        someNeo4jCustomers.add(createCustomer("Josh", "Anderson"));
+        someNeo4jCustomers.add(createCustomer("Olivia", "Moore"));
+        someNeo4jCustomers.add(createCustomer("Martijn", "Garcia"));
+        someNeo4jCustomers.add(createCustomer("Abigail", "Jones"));
+        someNeo4jCustomers.add(createCustomer("Stephen", "Lewis"));
+        someNeo4jCustomers.add(createCustomer("Sophia", "Walker"));
 
         // Relationships
         someNeo4jCustomers.get(0).addFriend(someNeo4jCustomers.get(1));
