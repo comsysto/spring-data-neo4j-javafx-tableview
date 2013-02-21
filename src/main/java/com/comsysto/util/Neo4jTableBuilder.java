@@ -71,6 +71,9 @@ public class Neo4jTableBuilder <T extends Neo4jNode> {
         }
     }
 
+    /** listens to changes in the sort type of a column
+     *
+     */
     private class SortTypeChangeListener implements InvalidationListener {
 
         @Override
@@ -92,9 +95,6 @@ public class Neo4jTableBuilder <T extends Neo4jNode> {
             }
         }
     }
-
-    //@Autowired
-    //private FXMLDialog customerErrorDialog;
 
     /** automatically generates a tableView to add, edit and remove the neo4j tableRepository fields annotated
      * with @Neo4jTableBuilderColumnField.
