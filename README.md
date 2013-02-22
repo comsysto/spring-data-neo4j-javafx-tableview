@@ -3,6 +3,8 @@ spring-data-neo4j-javafx-tableview
 
 This is a showcase demonstrating how Spring Data Neo4j nodes can be displayed and edited in a JavaFX TableView.
 
+For more details read the blog post http://blog.comsysto.com/2013/02/21/how-to-present-spring-data-neo4j-nodes-in-a-javafx-tableview/.
+
 This solution is based on:
 - Steve On Java - JavaFX - http://javafx.steveonjava.com/javafx-and-spring-day-1/
 - JavaFX Documentation Home - TableView - http://docs.oracle.com/javafx/2/ui_controls/table-view.htm
